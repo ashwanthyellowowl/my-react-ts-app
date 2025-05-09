@@ -1,7 +1,21 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "esnext",                        // Target the latest ECMAScript version
+    "lib": ["dom", "dom.iterable", "esnext"],  // Include libraries for DOM and ESNext features
+    "allowJs": true,                           // Allow JavaScript files to be processed by TypeScript
+    "skipLibCheck": true,                      // Skip type-checking of declaration files (faster build)
+    "esModuleInterop": true,                   // Enable ES module interoperability
+    "allowSyntheticDefaultImports": true,      // Allow synthetic default imports
+    "strict": true,                            // Enable strict type-checking options
+    "forceConsistentCasingInFileNames": true,  // Ensure consistent casing in file names
+    "noFallthroughCasesInSwitch": true,        // Prevent fallthrough in switch statements
+    "module": "esnext",                        // Use ESNext module system (modern JavaScript modules)
+    "moduleResolution": "node",                // Resolve modules as Node.js does
+    "resolveJsonModule": true,                 // Allow importing JSON files as modules
+    "isolatedModules": true,                   // Treat each file as an isolated module
+    "noEmit": true,                            // Do not emit output files (TypeScript is used for linting)
+    "jsx": "react-jsx"                         // Use the new JSX transform for React 17+
+  },
+  "include": ["src/**/*"],                      // Include all TypeScript/JavaScript files inside the src directory
+  "exclude": ["node_modules"]                   // Exclude node_modules folder from being checked
 }
