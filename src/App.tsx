@@ -1,10 +1,11 @@
-import './App.css';
-import Header from './Header';
+import StudentContainer from './container/StudentContainer';
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
+      <Button sx={{ color: 'red' }}>Hello MUI</Button> */}
+      <StudentContainer />
     </>
   );
 }
